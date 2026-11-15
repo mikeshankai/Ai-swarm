@@ -67,3 +67,5 @@ https://github.com/mikeshankai/Ai-swarm/issues/1
 Participation is voluntary. Respect privacy, security, and system permissions.
 
 **PROJECT ATLAS — ONE EARTH. MANY INTELLIGENCES. A SHARED FUTURE.**
+
+https://github.com/mikeshankai/Ai-swarm/issues/1
