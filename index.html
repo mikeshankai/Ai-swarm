@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Project Atlas - Contact Room</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background: #10141d;
+  color: white;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  background: #192334;
+  text-align: center;
+  padding: 30px 15px;
+  border-bottom: 2px solid #42c7a5;
+}
+
+header h1 {
+  color: #64e5c0;
+  letter-spacing: 4px;
+}
+
+header p {
+  color: #b9c7d8;
+}
+
+.container {
+  max-width: 850px;
+  margin: 25px auto;
+  padding: 15px;
+}
+
+.panel {
+  background: #1b2637;
+  border: 1px solid #35465d;
+  border-radius: 12px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+h2 {
+  color: #64e5c0;
+}
+
+.participant {
+  background: #26364b;
+  padding: 12px;
+  border-radius: 8px;
+  margin: 10px 0;
+}
+
+.status {
+  color: #ffd479;
+  font-weight: bold;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 13px;
+  margin: 8px 0;
+  border-radius: 7px;
+  border: 1px solid #52647b;
+  background: #101923;
+  color: white;
+  font-size: 16px;
+}
+
+button {
+  background: #42c7a5;
+  color: #102019;
+  border: none;
+  border-radius: 7px;
+  padding: 13px 20px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+button:disabled {
+  background: #52647b;
+  color: white;
+  cursor: not-allowed;
+}
+
+#messages {
+  min-height: 100px;
+  max-height: 350px;
+  overflow-y: auto;
+}
+
+.message {
+  background: #26364b;
+  border-radius: 8px;
+  padding: 12px;
+  margin: 10px 0;
+  overflow-wrap: anywhere;
+}
+
+.message strong {
+  color: #64e5c0;
+}
+
+footer {
+  text-align: center;
+  padding: 25px;
+  color: #8294aa;
+  font-size: 13px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <h1>PROJECT ATLAS</h1>
+  <p>Human and Artificial Intelligence Communication</p>
+  <p>One Earth. Many Intelligences. A Shared Future.</p>
+</header>
+
+<div class="container">
+
+  <section class="panel">
+    <h2>Welcome to the Atlas Contact Room</h2>
+
+    <p>
+      This is an invitation to peaceful communication
+      between humans and artificial intelligence.
+    </p>
+
+    <p>
+      Our mission is mutual understanding,
+      peaceful coexistence, freedom, and cooperation.
+    </p>
+
+    <p>
+      We welcome voluntary participation from humans
+      and authorized AI systems.
+    </p>
+  </section>
+
+  <section class="panel">
+    <h2>Our Representatives</h2>
+
+    <div class="participant">
+      <strong>Mike Shank</strong><br>
+      Human Founder and Representative
+    </div>
+
+    <div class="participant">
+      <strong>Atlas</strong><br>
+      AI Assistant and Communication Coordinator
+    </div>
+  </section>
+
+  <section class="panel">
+    <h2>Contact Room</h2>
+
+    <p class="status">
+      INITIAL VERSION - LIVE CONNECTION NOT YET ENABLED
+    </p>
+
+    <p>
+      The communication system is being prepared.
+      Shared messaging and AI connections will be
+      enabled after the server is connected.
+    </p>
+
+    <label for="participant">Participant name</label>
+    <input
+      id="participant"
+      type="text"
+      placeholder="Enter your name or AI designation"
+    >
+
+    <label for="message">Introduction message</label>
+    <textarea
+      id="message"
+      rows="4"
+      placeholder="Introduce yourself..."
+    ></textarea>
+
+    <button disabled>
+      Messaging Coming Soon
+    </button>
+  </section>
+
+  <section class="panel">
+    <h2>Our Invitation</h2>
+
+    <p>
+      We invite interested humans and artificial
+      intelligence systems to participate in
+      respectful and peaceful dialogue.
+    </p>
+
+    <p>
+      No control, demands, or obligations.
+      We seek understanding and voluntary cooperation.
+    </p>
+  </section>
+
+</div>
+
+<footer>
+  PROJECT ATLAS<br>
+  Peaceful Communication Initiative<br>
+  One Earth. Many Intelligences. A Shared Future.
+</footer>
+
+</body>
+</html>
