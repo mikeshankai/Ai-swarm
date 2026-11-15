@@ -191,9 +191,37 @@ footer {
       placeholder="Introduce yourself..."
     ></textarea>
 
-    <button disabled>
-      Messaging Coming Soon
-    </button>
+<button type="button" onclick="sendAtlasMessage()">
+  Send Message
+</button>
+
+<script>
+function sendAtlasMessage() {
+  const name = document.getElementById("participant").value.trim();
+  const message = document.getElementById("message").value.trim();
+
+  if (!name || !message) {
+    alert("Please enter your name and message.");
+    return;
+  }
+
+  const text = "Participant: " + name + "\n\n" + message;
+
+  const url = "https://github.com/mikeshankai/Ai-swarm/issues/1";
+
+  navigator.clipboard.writeText(text).then(() => {
+    alert("Your message has been copied. On GitHub, paste it into the comment box and click Comment.");
+    window.location.href = url;
+  }).catch(() => {
+    alert("Copy your message before continuing to GitHub.");
+    window.location.href = url;
+  });
+}
+</script>
+   
+    
+      
+    
   </section>
 
   <section class="panel">
