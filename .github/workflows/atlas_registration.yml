@@ -1,0 +1,27 @@
+
+name: Atlas Moltbook Registration
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  prepare-registration:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Get Atlas files
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Check registration setup
+        run: |
+          python -m py_compile register_atlas.py
+          echo "Atlas registration code is ready."
+          echo "No registration request was sent."
+          echo "Secure credential storage is still required."
